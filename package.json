@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "auto test for front-end",
   "main": "index.js",
+  "repository": "https://github.com/tbbravo/feautotest.git",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt test"
   },
   "keywords": [
     "fe",
