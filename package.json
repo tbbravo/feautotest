@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/tbbravo/feautotest.git",
   "scripts": {
-    "test": "grunt test"
+    "test": "node --harmony index.js"
   },
   "keywords": [
     "fe",
