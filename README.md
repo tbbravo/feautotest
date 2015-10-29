@@ -6,6 +6,8 @@
 
 # preview
 
+你可能需要使用全局代理来查看该图：
+
 ![Preview](usage.gif)
 
 # test

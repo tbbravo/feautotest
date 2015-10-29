@@ -50,9 +50,9 @@ function* test() {
         return $('.j-local-category .j-cate-item').length;
     });
 
-    yield nightmare.click('#forumEditBtn').click(1e3).wait(1e3);
+    yield nightmare.click('#forumEditBtn').click(1e3).wait(3e3);
 
-    yield nightmare.type('#addForumArea', 'test').wait(500).click('#dialogJbody input[type="button"]').wait(1e3);
+    yield nightmare.type('#addForumArea', 'test').wait(1e3).click('#dialogJbody input[type="button"]').wait(3e3);
 
     var succeed = yield nightmare.evaluate(function () {
         var $ = window.$;
@@ -73,6 +73,8 @@ function* test() {
         });
 
     });
+
+    yield nightmare.wait(2e3);
 
     yield nightmare.evaluate(function (succeed) {
         document.write('<center><font size=+5 color=red>Test Result:' + succeed + '</font></center>');
